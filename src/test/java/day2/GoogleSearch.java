@@ -57,12 +57,12 @@ public class GoogleSearch {
         driver.get("http://google.com");
     }
 
-    public void explicitWait (WebDriver driver) {
+    public void explicitWait(WebDriver driver) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("resultStats")) );
     }
 
-    public void sleepThread (){
+    public void sleepThread(){
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {

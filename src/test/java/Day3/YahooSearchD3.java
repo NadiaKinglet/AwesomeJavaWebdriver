@@ -67,5 +67,4 @@ public class YahooSearchD3 {
         driver.get("https://ca.yahoo.com");
     }
 
-
 }

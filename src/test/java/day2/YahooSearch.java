@@ -64,7 +64,7 @@ public class YahooSearch {
     }
 
     private void openMainPage() {
-        driver.get("http://yahoo.com");
+        driver.get("https://ca.yahoo.com/?p=us");
     }
 
 //    public void explicitWait (WebDriver driver) {

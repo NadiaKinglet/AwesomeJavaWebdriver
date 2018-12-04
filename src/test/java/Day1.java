@@ -12,8 +12,6 @@ public void testMethod1(){
         int myNumber;
         myNumber = 5;
         System.out.println(myNumber);
-
-
     }
 
     @Test

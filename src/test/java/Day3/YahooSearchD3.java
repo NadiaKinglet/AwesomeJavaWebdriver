@@ -30,10 +30,14 @@ public class YahooSearchD3 {
         openMainPage();
         typeQuery(queryString);
         submitSearch();
+        explicitwait(driver);
         assertResult();
     }
 
-
+    private void explicitwait(WebDriver driver) {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.compPagination span")) );
+    }
 
 
     private void assertResult() {

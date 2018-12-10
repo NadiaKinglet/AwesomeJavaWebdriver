@@ -30,7 +30,6 @@ public class YahooSearchPageLoadCondition {
         openMainPage();
         typeQuery(queryString);
         submitSearch();
-        Tools.waitForPageLoaded(driver);
         assertResult();
     }
 
@@ -57,6 +56,7 @@ public class YahooSearchPageLoadCondition {
 
     private void submitSearch() {
         driver.findElement(By.id("uh-search-box")).submit();
+        Tools.waitForPageLoaded(driver);
     }
 
     private void typeQuery(String queryString) {

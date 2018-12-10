@@ -26,13 +26,9 @@ public class CheckBoxesTest {
     @Test
     public void testCheckBoxes() {
         String windowsPageURL = "https://the-internet.herokuapp.com/checkboxes";
-
         navigateToURL(windowsPageURL);
-
         clickOnFirstCheckBox();
-
         assertCheckBoxChecked();
-
 
     }
 
